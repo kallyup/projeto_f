@@ -1,5 +1,3 @@
-
-
 let usuario =[]
 function adicionar(){ 
     let nome = document.getElementById("nome");
@@ -15,7 +13,3 @@ function adicionar(){
     email.value="",
     console.log(usuario);
 }
-
-
-
-
