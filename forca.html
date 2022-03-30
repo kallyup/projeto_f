@@ -22,6 +22,37 @@
                         <li>Se você for bom o suficiente ele será libertado e terá mais uns anos de vida</li>
                         <h3>Boa sorte</h3>
             </section>
+           
+            <label for="tema">Escolha seu Tema</label>
+            <select id="tema">
+                <option value="furtas">Frutas</option>
+                <option value="paises">países</option>
+                <option value="personagens">Personagens</option>
+                <option value="cor">cor</option>
+            </select>
+            <section>
+                <div class="jogo-container">
+                    <div class="forca-container">
+                      <svg height="250" width="200" class="forca">
+                        <!-- forca -->
+                        <line x1="60" y1="20" x2="140" y2="20" />
+                        <line x1="140" y1="20" x2="140" y2="50" />
+                        <line x1="60" y1="20" x2="60" y2="230" />
+                        <line x1="20" y1="230" x2="100" y2="230" />
+              
+                        <!-- cabeça -->
+                        <circle cx="140" cy="70" r="20" class="forca-parte" />
+                        <!-- corpo -->
+                        <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
+                        <!-- braços -->
+                        <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
+                        <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
+                        <!-- pernas -->
+                        <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
+                        <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
+                      </svg>
+                    </div>
+            </section>
             <section class="keyboard">
                 <div id="keyboard">
                     <a id="a" class="key">A</a>
@@ -53,35 +84,6 @@
                     <a id="y" class="key">Y</a>
                     <a id="z" class="key">Z</a>
                 </div>
-            <label for="tema">Escolha seu Tema</label>
-            <select id="tema">
-                <option value="furtas">Frutas</option>
-                <option value="paises">países</option>
-                <option value="personagens">Personagens</option>
-                <option value="cor">cor</option>
-            </select>
-            <section>
-                <div class="jogo-container">
-                    <div class="forca-container">
-                      <svg height="250" width="200" class="forca">
-                        <!-- forca -->
-                        <line x1="60" y1="20" x2="140" y2="20" />
-                        <line x1="140" y1="20" x2="140" y2="50" />
-                        <line x1="60" y1="20" x2="60" y2="230" />
-                        <line x1="20" y1="230" x2="100" y2="230" />
-              
-                        <!-- cabeça -->
-                        <circle cx="140" cy="70" r="20" class="forca-parte" />
-                        <!-- corpo -->
-                        <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
-                        <!-- braços -->
-                        <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
-                        <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
-                        <!-- pernas -->
-                        <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
-                        <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
-                      </svg>
-                    </div>
             </section>
         </main>
     </div>
