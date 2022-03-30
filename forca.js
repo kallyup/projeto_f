@@ -1,4 +1,15 @@
 let usuario =[]
+
+
+
+class pessoa{
+    constructor(nome, email, vitoria=0, derrota=0,){
+        this.nome= nome,
+        this.email=email,
+        this.vitoria=vitoria,
+        this.derrota=derrota
+    }
+}
 function adicionar(){ 
     let nome = document.getElementById("nome");
     let email = document.getElementById("email");
@@ -6,9 +17,10 @@ function adicionar(){
     let usuario={
         nome: nome.value,
         email: email.value,
-
-   
     }
+    document.getElementById("vitoria").textContent = cadastro01.vitoria;
+    document.getElementById("derrota").textContent = cadastro01.derrota;
+    reset();
     nome.value="",
     email.value="",
     console.log(usuario);
@@ -19,30 +31,45 @@ let cor= ['rosa', 'azul', 'branco', 'amarelo', 'anil', 'vermelho', 'laranja', 'v
 let paises= ['brasil', 'argentina', 'uruguai', 'paraguai', 'chile', 'canada', 'frança', 'ucrania', 'russia', 'argelia', 'cuba', 'inglaterra']
 
 let temas=[frutas, paises, personagens, cor]
-console.log(frutas)
 
 let letrasErradas=[]
 let letasCertas=[]
+let vitoria=0
+let derrota=0
+let chances=5
 
 console.log(temas)
+
+function desenharLinhas(palavraEscolhidaFor){
+    let underline=""   
+    let palavraEscolhida=palavraEscolhidaFor
+    console.log(palavraEscolhida)
+    for(let i =0; i<palavraEscolhida.length; i++){
+        underline+="_ "
+    }
+    console.log(underline);
+}
 
 function jogo(){
     iniciar();
     confereLetras();
     contadorVD();
     reset();
-
 }
     function iniciar(){
         let temaEscolhido = document.getElementById("tema").value
         if(temaEscolhido=="frutas"){
-            console.log(`${frutas[Math.floor(Math.random()*frutas.length)]}`) 
+            let frutaEscolhida=(`${frutas[Math.floor(Math.random()*frutas.length)]}`) 
+            desenharLinhas(frutaEscolhida)
         }else if(temaEscolhido=="cor"){
-            console.log(`${cor[Math.floor(Math.random()*cor.length)]}`) 
+            let corEscolhida=(`${cor[Math.floor(Math.random()*cor.length)]}`) 
+            desenharLinhas(corEscolhida)
         }else if(temaEscolhido=="paises"){
-            console.log(`${paises[Math.floor(Math.random()*paises.length)]}`)
+            let paisEscolido=(`${paises[Math.floor(Math.random()*paises.length)]}`)
+            desenharLinhas(paisEscolido)
         }else{
-            console.log(`${personagens[Math.floor(Math.random()*personagens.length)]}`) 
+            let personagensEscolhido=(`${personagens[Math.floor(Math.random()*personagens.length)]}`) 
+            desenharLinhas(personagensEscolhido)
         }
     }
     function confereLetras(){
