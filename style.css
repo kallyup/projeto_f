@@ -1,5 +1,5 @@
 :root {
-    --clickable: #117CE8;
+    --clickable: #f0f3f5;
     --secondary-bg: #FFFDDF;
 }
 
@@ -12,6 +12,7 @@
 body {
     margin: 0px;
     background-image: url(bg-line.png);
+    background-color: rgb(199, 78, 78);
 }
 
 a {
@@ -34,6 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+   
 }
 
 #title {
@@ -57,7 +59,7 @@ header {
     transform: translateX(-50%);
     width: calc(100% - 40px);
     padding: 40px 20px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0px 3px 6px rgb(252, 251, 251);
     z-index: 1;
 }
 
@@ -166,7 +168,7 @@ header {
     display: block;
     position: absolute;
     bottom: 0px;
-    background-color: black;
+    background-color: rgb(253, 253, 253);
     width: 100%;
     height: 3px;
     border-radius: 10px;
