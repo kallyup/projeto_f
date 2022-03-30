@@ -25,7 +25,7 @@ function adicionar(){
     email.value="",
     console.log(usuario);
 }
-let frutas =['pitaya', 'banana', 'morango', 'tangirina', 'kiwi', 'caqui', 'ciriguela', 'macaiba', 'ameixa', 'goiaba', 'maracuja', 'melancia']
+let frutas = ['pitaya', 'banana', 'morango', 'tangirina', 'kiwi', 'caqui', 'ciriguela', 'macaiba', 'ameixa', 'goiaba', 'maracuja', 'melancia']
 let personagens= ['naruto', 'goku', 'hulk', 'batman', 'aquaman', 'thor', 'popay', 'chapolim', 'levi', 'sasuke', 'pan', 'sakura']
 let cor= ['rosa', 'azul', 'branco', 'amarelo', 'anil', 'vermelho', 'laranja', 'vinho', 'roxo', 'verde', 'preto', 'laranja']
 let paises= ['brasil', 'argentina', 'uruguai', 'paraguai', 'chile', 'canada', 'frança', 'ucrania', 'russia', 'argelia', 'cuba', 'inglaterra']
@@ -73,6 +73,8 @@ function jogo(){
         }
     }
     function confereLetras(){
+         let letraEscolhida=document.getElementById("letra").value
+        console.log(letraEscolhida)
          
     }
     function contadorVD(){
